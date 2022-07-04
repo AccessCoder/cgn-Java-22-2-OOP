@@ -1,14 +1,18 @@
+import model.Student;
+
 public class Main {
 
     public static void main(String[] args) {
 
-        Student felix = new Student();
+        Student myFirstStudent = new Student("Paul", "Meier");
+        System.out.println(myFirstStudent.getFirstname());
 
-        felix.setName("Felix Muster");
-        System.out.println(felix.getName());
+        Student mySecondStudent = new Student("Maria", "Mueller");
+        System.out.println(mySecondStudent.getLastname());
 
-        felix.age = 28;
-        System.out.println(felix.age);
+
+
+
     }
 
 
