@@ -27,6 +27,14 @@ public class Student {
         return "Student: " + firstName + ", " + lastName;
     }
 
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public String getFirstname() {
+        return firstName;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -38,14 +46,6 @@ public class Student {
     @Override
     public int hashCode() {
         return Objects.hash(firstName, lastName);
-    }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
-
-    public String getFirstname() {
-        return firstName;
     }
 
     public void setFirstname(String firstname) {
